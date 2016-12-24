@@ -17,8 +17,9 @@
             </form>
             
             <ul>
-                <li>Dummy item 1</li>
-                <li>Dummy item 2</li>
+                <% for(var i=0; i<todos.length; i++){ %>
+                    <li><%= todos[i].item %></li>
+                <% }; %>
             </ul>
 
     </body>
