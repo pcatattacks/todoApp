@@ -2,11 +2,14 @@
     <head>
         <title>To-do List | by Pranav Dhingra </title>
         <!--jquery cdn-->
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-        integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+        <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
         <!--stylesheet-->
         <link href="/assets/styles.css" rel="stylesheet" type="text/css">
+        <!--frontend javascript-->
+        <script src="/assets/todolist.js" type="text/javascript"></script>
     </head>
 
     <body>
@@ -17,10 +20,10 @@
             </form>
             
             <ul>
-                <% for(var i=0; i<todos.length; i++){ %>
+                <% for(var i=0; i < todos.length; i++){ %>
                     <li><%= todos[i].item %></li>
                 <% }; %>
             </ul>
-
+        </div>
     </body>
 </html>
